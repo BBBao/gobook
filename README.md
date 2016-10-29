@@ -1,2 +1,1 @@
-# gobook
-go learning
+Go语言开发实战
