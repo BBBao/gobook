@@ -138,7 +138,7 @@ func main() {
 	fmt.Println(reflect.ValueOf(f), reflect.TypeOf(f))
 	fmt.Println(reflect.ValueOf(c), reflect.TypeOf(c))
 	fmt.Println(reflect.ValueOf(s), reflect.TypeOf(s))
-    fmt.Println(reflect.ValueOf(cx), reflect.TypeOf(cx))
+  fmt.Println(reflect.ValueOf(cx), reflect.TypeOf(cx))
 }
 ```
 运行结果如下：
@@ -151,4 +151,4 @@ go string
 ```
 字面量的通俗理解： 就是直观用户输入的数据，编译器就推论出输入的数据属于什么数据类型。
 
-下一节我们会继续讲解Go语言数据类型，包括：变量、命名、常量、基本类型、引用类型、类型转换
+下一节我们会继续讲解Go语言数据类型，包括：变量、命名、常量、基本类型、引用类型、类型转换以及自定义类型
