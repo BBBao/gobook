@@ -234,7 +234,38 @@ true false
   println(p.x)
 ```
 
-练习：完善扩展上面所有伪代码
+#### 初始化
+对基本变量的初始化第一节里已经提到了字面量，在Go语言中，对复合类型变量(数组、切片、字典、结构体)
+的初始化时有一些语法限制，对基本变量的初始化无需这些限制，比如：
+
+```text
+1. 初始化表达式必须含有类型标签
+2. 左花括号不能另起一行，必须在类型尾部
+3. 多成员初始值必须用逗号","分隔
+4. 允许多行编写，但是每行必须以逗号","或右花括号结束
+```
+示例如下：
+
+```go
+type stu struct{
+    name string
+    age int
+}
+ b := stu{
+    "zhang",
+	  20        //unexpected semicolon or newline, expecting comma or }，须以逗号或右花括号结束
+	}
+
+b := stu
+	{           //syntax error: unexpected }, expecting expression，左花括号不能另起一行
+		"zhang",
+		20,
+	}
+
+var data stu = {"wang",20} //syntax error: missing operand，初始化表达式必须含有类型标签
+```
+
+练习：请动脑完善和扩展上面所有伪代码
 
 下一节我们继续讲解流程控制
 
