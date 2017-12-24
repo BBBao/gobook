@@ -36,14 +36,17 @@ Go语言比较特别的是在条件判读语句中支持初始化语句,允许�
 最典型的应用就是字典的查找：
 
 ```go
-    if v, ok := map1[key1];ok{
+    if v, ok := map1[key1]; ok{
         ...
     }
 ```
-优化建议： 对于那些过于复杂的组合条件判断，建议独立出来封装成函数，将流程控制和实现细节分离，使你的代码更加模块化，提高可读性。
-有些时候你需要写很多的if-else来实现一些逻辑处理，这个时候代码看上去就很丑很冗长，而且也不易于以后的维护，这个时候switch就能很好的解决这个问题。
-- switch
-switch与if类似，也用于选择执行，执行的过程从上至下，直到找到匹配项，基本用法如下：
+优化建议： 
+> 1. 对于那些过于复杂的组合条件判断，建议独立出来封装成函数，将流程控制和实现细节分离，使你的代码更加模块化，提高可读性。
+> 2. 有些时需要写很多的if-else实现一些复杂的逻辑处理，这时代码看上去就很罗嗦很冗长，而且也不易于以后的维护，用switch...case来很好的解决这个问题。
+
+- switch...case
+
+switch与if类似，也用于选择执行，执行的过程从上至下顺序匹配各个case，基本用法如下：
 
 ```go
 switch sExpr {
@@ -57,11 +60,10 @@ switch sExpr {
         other code
 }
 ```
-
-switch的表达式可以不是常量或者字符串，也可以沒有表达式，没有表达式则匹配true, 如同if-else if-else,和
-其它语言的switch用法基本一样，不同的是在每个case中隐藏了break,不过你也可以显示加入break。
-当匹配case成功后，处理当前case逻辑，处理完成后跳出整个switch，但这不是绝对的，可以使用fallthrough强迫程序执行后面的case， 
-反之没有匹配到任何case，则执行default逻辑，比如:
+switch中的表达式可以不是常量或字符串，甚至可以沒有表达式，若没有表达式则匹配true, 如同if-else if-else,与
+其它编程语言的switch用法基本相同，不同的是在每个case中隐藏了break,不过也可以显示加入break。
+当case匹配成功后，处理当前case的处理逻辑，正常情况下，处理完成后就跳出整个switch，但这不是绝对的，
+可以使用fallthrough强迫程序执行后面的case; 如果没有任何case匹配成功，则执行default逻辑，比如:
 
 ```go
 {
@@ -75,16 +77,16 @@ switch的表达式可以不是常量或者字符串，也可以沒有表达式�
     case 3:
         fmt.Println("three")
     }
-}                           //基本的switch
+}                           
 
 {
     switch time.Now().Weekday() {
-    case time.Saturday, time.Sunday:
+    case time.Saturday, time.Sunday: //在同一个case中可以写多个表达式，它们之间是逻辑或的关系
         fmt.Println("it's the weekend")
     default:
         fmt.Println("it's a weekday")
     }
-}                           //在同一个case中可以写多个表达式，它们之间是逻辑或的关系
+}                           
 
 {
     t := time.Now()
@@ -130,7 +132,7 @@ for是Go语言中仅有的一种循环语句，下面是常见的三种用法：
 ```
 初始化语句只会被执行一次，并且初始化表达式支持函数调用或定义局部变量;
 
-for循环在日常开发中经常与range搭配，被用来遍历字符串、数组、切片、字典和通道，返回索引和键值数据，比如:
+在日常开发中for经常与range搭配，for...range被用来遍历字符串、数组、切片、字典和通道等，返回索引和键值数据，比如:
 
 ```go
 {
@@ -157,7 +159,7 @@ for循环在日常开发中经常与range搭配，被用来遍历字符串、数
     }
 }
 ```
-总结如下：
+归纳如下：
 
 |data type|first value|second value|
 | :---: |:---:|:---:|
@@ -170,9 +172,9 @@ for循环在日常开发中经常与range搭配，被用来遍历字符串、数
 Go语言有三种跳转类型，分别是 continue, break, goto
 
 ```text
-continue 仅用于for循环内部 ，终止本次循环，立即进入下一轮循环
-break 用于for循环, switch,select语句，终止整个语句块的执行
-goto 定点跳转，但不能跳转到其他函数或内层代码块内
+continue：仅用于for循环内部 ，终止本次循环，立即进入下一轮循环
+break：用于for循环, switch,select语句，终止整个语句块的执行
+goto：定点跳转，但不能跳转到其他函数或内层代码块内
 ```
 看下面的例子：
 
