@@ -28,3 +28,4 @@
     * [mongo](db/mongo.md)
 * [数据结构和算法](data/README.md)
     * [顺序查找](data/linear.md)
+* [常见误区](mistake/README.md)

@@ -1,0 +1,1024 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>反射 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="utest.html" />
+    
+    
+    <link rel="prev" href="package.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    初识GoLang
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="grammer.html">
+            
+                <a href="grammer.html">
+            
+                    
+                    词法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="type.html">
+            
+                <a href="type.html">
+            
+                    
+                    类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="express.html">
+            
+                <a href="express.html">
+            
+                    
+                    表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="flow.html">
+            
+                <a href="flow.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="data.html">
+            
+                <a href="data.html">
+            
+                    
+                    数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="func.html">
+            
+                <a href="func.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="method.html">
+            
+                <a href="method.html">
+            
+                    
+                    方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="interface.html">
+            
+                <a href="interface.html">
+            
+                    
+                    接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="package.html">
+            
+                <a href="package.html">
+            
+                    
+                    包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.10" data-path="reflect.html">
+            
+                <a href="reflect.html">
+            
+                    
+                    反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="utest.html">
+            
+                <a href="utest.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="goroutine.html">
+            
+                <a href="goroutine.html">
+            
+                    
+                    并发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../fileio/">
+            
+                <a href="../fileio/">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../fileio/text.html">
+            
+                <a href="../fileio/text.html">
+            
+                    
+                    Text文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../fileio/json.html">
+            
+                <a href="../fileio/json.html">
+            
+                    
+                    Json文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../fileio/yaml.html">
+            
+                <a href="../fileio/yaml.html">
+            
+                    
+                    Yaml文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../net/">
+            
+                <a href="../net/">
+            
+                    
+                    网络编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../net/tcp.html">
+            
+                <a href="../net/tcp.html">
+            
+                    
+                    tcp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../net/udp.html">
+            
+                <a href="../net/udp.html">
+            
+                    
+                    udp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../net/rpc.html">
+            
+                <a href="../net/rpc.html">
+            
+                    
+                    rpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../db/">
+            
+                <a href="../db/">
+            
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../db/mysql.html">
+            
+                <a href="../db/mysql.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../db/redis.html">
+            
+                <a href="../db/redis.html">
+            
+                    
+                    redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../db/mongo.html">
+            
+                <a href="../db/mongo.html">
+            
+                    
+                    mongo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../data/">
+            
+                <a href="../data/">
+            
+                    
+                    数据结构和算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../data/linear.html">
+            
+                <a href="../data/linear.html">
+            
+                    
+                    顺序查找
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../mistake/">
+            
+                <a href="../mistake/">
+            
+                    
+                    常见误区
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >反射</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x53CD;&#x5C04;">&#x53CD;&#x5C04;</h1>
+<pre><code>1. &#x7C7B;&#x578B;
+2. &#x503C;
+3. &#x65B9;&#x6CD5;
+4. &#x6027;&#x80FD;
+</code></pre><h3 id="&#x7C7B;&#x578B;">&#x7C7B;&#x578B;</h3>
+<p>Go&#x8BED;&#x8A00;&#x53CD;&#x5C04;(reflect)&#x662F;&#x5728;&#x7A0B;&#x5E8F;&#x65F6;&#x5B9E;&#x73B0;&#x80FD;&#x591F;&#x83B7;&#x53D6;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;&#x4FE1;&#x606F;&#x548C;&#x5185;&#x5B58;&#x7ED3;&#x6784;&#x7684;&#x65B9;&#x6CD5;&#x3002;
+&#x548C;C&#x8BED;&#x8A00;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E00;&#x6837;&#xFF0C;Go&#x5BF9;&#x8C61;&#x5934;&#x90E8;&#x4E5F;&#x6CA1;&#x6709;&#x7C7B;&#x578B;&#x6307;&#x9488;&#xFF0C;&#x901A;&#x8FC7;&#x5176;&#x81EA;&#x8EAB;&#x662F;&#x65E0;&#x6CD5;&#x5728;&#x8FD0;&#x884C;&#x671F;
+&#x83B7;&#x53D6;&#x4EFB;&#x4F55;&#x76F8;&#x5173;&#x7C7B;&#x578B;&#x4FE1;&#x606F;&#x7684;&#xFF0C;&#x53CD;&#x5C04;&#x64CD;&#x4F5C;&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x53D8;&#x91CF;&#x83B7;&#x53D6;&#x5176;&#x81EA;&#x8EAB;&#x7C7B;&#x578B;&#x5916;&#xFF0C;&#x8FD8;&#x4F1A;&#x4FDD;&#x5B58;&#x5B9E;&#x9645;
+&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x6570;&#x636E;&#x3002;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> TypeOf(i <span class="hljs-keyword">interface</span>{}) Type
+<span class="hljs-keyword">func</span> ValueOf(i <span class="hljs-keyword">interface</span>{}) Value
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4E24;&#x4E2A;&#x53CD;&#x5C04;&#x5165;&#x53E3;&#x51FD;&#x6570;&#xFF0C;&#x4F1A;&#x5C06;&#x4EFB;&#x4F55;&#x4F20;&#x5165;&#x7684;&#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x4E3A;&#x63A5;&#x53E3;&#x7C7B;&#x578B;&#x3002;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> X32 <span class="hljs-keyword">int32</span>
+<span class="hljs-keyword">func</span> main(){
+    <span class="hljs-keyword">var</span> a X32 = <span class="hljs-number">100</span> 
+    t := reflect.TypeOf(a)
+    fmt.Println(t.Name(), t.Kind())                                                   
+}
+&#x8F93;&#x51FA;&#xFF1A;
+X32 <span class="hljs-keyword">int32</span>
+</code></pre>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;Type&#x548C;Kind&#x7684;&#x533A;&#x522B;&#xFF1A; Type&#x8868;&#x793A;&#x5BF9;&#x8C61;&#x7684;&#x771F;&#x5B9E;(&#x9759;&#x6001;)&#x7C7B;&#x578B;&#xFF0C;Kind&#x8868;&#x793A;&#x57FA;&#x7840;(&#x5E95;&#x5C42;)&#x7ED3;&#x6784;&#x7C7B;&#x578B;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x505A;&#x7C7B;&#x578B;
+&#x5224;&#x65AD;&#x4E0A;&#x9700;&#x8981;&#x660E;&#x786E;&#x9700;&#x6C42;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;&#x6B63;&#x786E;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x53CD;&#x5C04;&#x6765;&#x6784;&#x9020;&#x4E00;&#x4E9B;&#x57FA;&#x7840;&#x590D;&#x5408;&#x7C7B;&#x578B;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> main(){
+    s := reflect.SliceOf(reflect.TypeOf(<span class="hljs-number">0</span>))                                           
+    m := reflect.MapOf(reflect.TypeOf(<span class="hljs-string">&quot;&quot;</span>), reflect.TypeOf(<span class="hljs-number">0</span>))
+    fmt.Println(s , m)
+}
+&#x8F93;&#x51FA;&#xFF1A;
+[]<span class="hljs-keyword">int</span> <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">int</span>
+</code></pre>
+<p>&#x9488;&#x5BF9;&#x4F20;&#x5165;&#x53C2;&#x6570;&#x7684;&#x7C7B;&#x578B;&#x9700;&#x8981;&#x52A0;&#x4EE5;&#x6CE8;&#x610F;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> X32 <span class="hljs-keyword">int32</span>
+{   
+    <span class="hljs-keyword">var</span> a X32 = <span class="hljs-number">100</span>
+    tx ,tp := reflect.TypeOf(a), reflect.TypeOf(&amp;a)
+    fmt.Println(tx,tp)
+    fmt.Println(tx.Kind(),tp.Kind())
+    fmt.Println(tp.Elem())
+}
+</code></pre>
+<p>&#x56E0;&#x4E3A;&#x666E;&#x901A;&#x57FA;&#x7C7B;&#x578B;&#x548C;&#x6307;&#x9488;&#x7C7B;&#x578B;&#x662F;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#xFF0C;&#x4F7F;&#x7528;Elem()&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x6307;&#x9488;&#x3001;&#x6570;&#x7EC4;&#x3001;&#x5207;&#x7247;&#x3001;&#x5B57;&#x5178;(&#x503C;)&#x3001;&#x6216;
+&#x901A;&#x9053;&#x7684;&#x57FA;&#x7C7B;&#x578B;&#x3002;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-go">{
+    s := reflect.TypeOf([]<span class="hljs-keyword">int32</span>{}).Elem()                                         
+    m := reflect.TypeOf(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">int</span>{}).Elem()
+    fmt.Println(s , m)
+}
+</code></pre>
+<p>&#x5982;&#x4F55;&#x904D;&#x5386;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x5B57;&#x6BB5;&#x5462;&#xFF1F;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> data <span class="hljs-keyword">struct</span>{
+    username <span class="hljs-keyword">string</span>
+    password <span class="hljs-keyword">string</span>
+}
+
+<span class="hljs-keyword">type</span> http <span class="hljs-keyword">struct</span>{
+    host <span class="hljs-keyword">string</span>
+    agent <span class="hljs-keyword">string</span>
+    data
+}
+<span class="hljs-keyword">func</span> main(){
+    <span class="hljs-keyword">var</span> h http
+    t := reflect.TypeOf(&amp;h)
+    <span class="hljs-keyword">if</span> t.Kind() == reflect.Ptr{
+        t = t.Elem()
+    }
+    <span class="hljs-comment">//t := reflect.TypeOf(h)</span>
+    <span class="hljs-keyword">for</span> i:= <span class="hljs-number">0</span>;i &lt; t.NumField();i++{
+        field := t.Field(i)
+        fmt.Println(field.Name, field.Type, field.Offset)
+        <span class="hljs-keyword">if</span> field.Anonymous {
+            <span class="hljs-keyword">for</span> x:= <span class="hljs-number">0</span>;x &lt; field.Type.NumField();x++{
+                subField := field.Type.Field(x)
+                fmt.Println(subField.Name, subField.Type, subField.Offset)
+            }
+        }
+    }
+}
+&#x8F93;&#x51FA;&#xFF1A;
+host <span class="hljs-keyword">string</span> <span class="hljs-number">0</span>
+agent <span class="hljs-keyword">string</span> <span class="hljs-number">16</span>
+data main.data <span class="hljs-number">32</span>
+username <span class="hljs-keyword">string</span> <span class="hljs-number">0</span>
+password <span class="hljs-keyword">string</span> <span class="hljs-number">16</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x4F20;&#x5165;&#x7684;&#x662F;&#x6307;&#x9488;&#x7C7B;&#x578B;&#xFF0C;&#x90A3;&#x4E48;&#x5FC5;&#x987B;&#x83B7;&#x53D6;&#x57FA;&#x7C7B;&#x578B;&#x540E;&#xFF0C;&#x624D;&#x80FD;&#x904D;&#x5386;&#x5B83;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x53CD;&#x4E4B;&#x4F20;&#x5165;&#x7684;
+&#x662F;&#x666E;&#x901A;&#x5BF9;&#x8C61;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x8C03;&#x7528;Elem&#x51FD;&#x6570;&#x83B7;&#x53D6;&#x57FA;&#x7C7B;&#x578B;&#x5C31;&#x53EF;&#x4EE5;&#x904D;&#x5386;&#x5B83;&#x7684;&#x5B57;&#x6BB5;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x533F;&#x540D;&#x5B57;&#x6BB5;&#x53EF;&#x4EE5;&#x7528;&#x591A;&#x7EA7;&#x7D22;&#x5F15;&#x6216;&#x6309;&#x7167;&#x5B9A;&#x4E49;&#x987A;&#x5E8F;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-go">{
+    <span class="hljs-keyword">var</span> h http
+    t := reflect.TypeOf(h)
+    username,ok := t.FieldByName(<span class="hljs-string">&quot;username&quot;</span>)
+    <span class="hljs-keyword">if</span> ok{ 
+        fmt.Println(username.Name, username.Type)
+    }   
+    password := t.FieldByIndex([]<span class="hljs-keyword">int</span>{<span class="hljs-number">2</span>,<span class="hljs-number">1</span>})                                            
+    fmt.Println(password.Name, password.Type)
+}
+&#x8F93;&#x51FA;&#xFF1A;
+username <span class="hljs-keyword">string</span>
+password <span class="hljs-keyword">string</span>
+</code></pre>
+<p>&#x904D;&#x5386;&#x65B9;&#x6CD5;&#x96C6;&#x65F6;&#x8981;&#x533A;&#x5206;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x4E0E;&#x6307;&#x9488;&#x7C7B;&#x578B;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (h *http) getHost()<span class="hljs-keyword">string</span>{
+    <span class="hljs-keyword">return</span> h.host
+}
+<span class="hljs-keyword">func</span> (h http) getAgent()<span class="hljs-keyword">string</span>{
+    <span class="hljs-keyword">return</span> h.agent
+}
+
+<span class="hljs-keyword">func</span> (d *data) getUser()<span class="hljs-keyword">string</span>{
+    <span class="hljs-keyword">return</span> d.username
+}
+<span class="hljs-keyword">func</span> (d data) getPass()<span class="hljs-keyword">string</span>{
+    <span class="hljs-keyword">return</span> d.password                                                                        
+}
+<span class="hljs-keyword">func</span> main(){
+    <span class="hljs-keyword">var</span> h http
+    t := reflect.TypeOf(&amp;h)
+    s := []reflect.Type{t,t.Elem()}  
+    <span class="hljs-comment">//t := reflect.TypeOf(h)     </span>
+    <span class="hljs-comment">//s := []reflect.Type{t,t.Elem()}     // Elem of invalid type</span>
+
+    <span class="hljs-keyword">for</span> _, m := <span class="hljs-keyword">range</span> s{
+        fmt.Println(m,<span class="hljs-string">&quot;:&quot;</span>)
+        <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>;i&lt;m.NumMethod();i++{
+            fmt.Println(<span class="hljs-string">&quot; &quot;</span>, m.Method(i))
+        }   
+    }   
+}
+&#x8F93;&#x51FA;&#xFF1A;
+*main.http :
+  {getAgent main <span class="hljs-keyword">func</span>(*main.http) <span class="hljs-keyword">string</span> &lt;<span class="hljs-keyword">func</span>(*main.http) <span class="hljs-keyword">string</span> Value&gt; <span class="hljs-number">0</span>}
+  {getHost main <span class="hljs-keyword">func</span>(*main.http) <span class="hljs-keyword">string</span> &lt;<span class="hljs-keyword">func</span>(*main.http) <span class="hljs-keyword">string</span> Value&gt; <span class="hljs-number">1</span>}
+  {getPass main <span class="hljs-keyword">func</span>(*main.http) <span class="hljs-keyword">string</span> &lt;<span class="hljs-keyword">func</span>(*main.http) <span class="hljs-keyword">string</span> Value&gt; <span class="hljs-number">2</span>}
+  {getUser main <span class="hljs-keyword">func</span>(*main.http) <span class="hljs-keyword">string</span> &lt;<span class="hljs-keyword">func</span>(*main.http) <span class="hljs-keyword">string</span> Value&gt; <span class="hljs-number">3</span>}
+main.http :
+  {getAgent main <span class="hljs-keyword">func</span>(main.http) <span class="hljs-keyword">string</span> &lt;<span class="hljs-keyword">func</span>(main.http) <span class="hljs-keyword">string</span> Value&gt; <span class="hljs-number">0</span>}
+  {getPass main <span class="hljs-keyword">func</span>(main.http) <span class="hljs-keyword">string</span> &lt;<span class="hljs-keyword">func</span>(main.http) <span class="hljs-keyword">string</span> Value&gt; <span class="hljs-number">1</span>}
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x53CD;&#x5C04;&#x80FD;&#x5426;&#x5F97;&#x77E5;&#x5176;&#x5B83;&#x5305;&#x7684;&#x975E;&#x5BFC;&#x51FA;&#x7684;&#x7ED3;&#x6784;&#x6210;&#x5458;&#x5462;&#xFF1F;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> nhp <span class="hljs-string">&quot;net/http&quot;</span>       <span class="hljs-comment">//alias</span>
+<span class="hljs-keyword">type</span> data <span class="hljs-keyword">struct</span>{
+    username <span class="hljs-keyword">string</span>
+    password <span class="hljs-keyword">string</span>
+}
+<span class="hljs-keyword">type</span> http <span class="hljs-keyword">struct</span>{
+    host <span class="hljs-keyword">string</span>
+    agent <span class="hljs-keyword">string</span>
+    data
+}
+
+<span class="hljs-keyword">func</span> main(){
+    <span class="hljs-keyword">var</span> s nhp.Server
+    t := reflect.TypeOf(s)
+    <span class="hljs-keyword">for</span> i:= <span class="hljs-number">0</span>;i &lt; t.NumField();i++{
+        fmt.Println(t.Field(i).Name)
+    }
+}
+&#x8F93;&#x51FA;&#xFF1A;
+Addr
+......
+disableKeepAlives
+nextProtoOnce
+nextProtoErr
+</code></pre>
+<p>&#x5229;&#x7528;&#x53CD;&#x5C04;&#x83B7;&#x53D6;&#x7ED3;&#x6784;&#x4F53;&#x5B57;&#x6BB5;tag&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x79CD;&#x505A;&#x6CD5;&#x5E38;&#x7528;&#x4E8E;ORM&#x6620;&#x5C04;&#x6216;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x9A8C;&#x8BC1;&#x7684;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Person <span class="hljs-keyword">struct</span>{
+    username <span class="hljs-keyword">string</span> <span class="hljs-string">`field:&quot;name&quot; type:&quot;varchar(60)&quot;`</span>
+    password <span class="hljs-keyword">string</span> <span class="hljs-string">`field:&quot;passmd5&quot; type:&quot;varchar(128)&quot;`</span>                                    
+}
+
+<span class="hljs-keyword">func</span> main(){
+    <span class="hljs-keyword">var</span> p Person
+    t := reflect.TypeOf(p)
+    <span class="hljs-keyword">for</span> i:= <span class="hljs-number">0</span>;i &lt; t.NumField();i++{
+        f := t.Field(i)
+        fmt.Println(f.Name,f.Tag.Get(<span class="hljs-string">&quot;field&quot;</span>), f.Tag.Get(<span class="hljs-string">&quot;type&quot;</span>))
+    }
+}
+</code></pre>
+<h4 id="&#x503C;">&#x503C;</h4>
+<p>&#x91CD;&#x6E29;&#x4E00;&#x4E0B;Go&#x53CD;&#x5C04;&#x7684;&#x4E24;&#x4E2A;&#x53CD;&#x5C04;&#x5165;&#x53E3;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> TypeOf(i <span class="hljs-keyword">interface</span>{}) Type     <span class="hljs-comment">//Type&#x83B7;&#x53D6;&#x7C7B;&#x578B;&#x4FE1;&#x606F;</span>
+<span class="hljs-keyword">func</span> ValueOf(i <span class="hljs-keyword">interface</span>{}) Value   <span class="hljs-comment">//Value&#x83B7;&#x53D6;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x6570;&#x636E;&#x4FE1;&#x606F;</span>
+</code></pre>
+<p>&#x56E0;&#x4E3A;&#x5728;&#x83B7;&#x53D6;&#x63A5;&#x53E3;&#x53D8;&#x91CF;&#x7684;&#x65F6;&#x5019;&#x662F;&#x590D;&#x5236;&#x5BF9;&#x8C61;&#x64CD;&#x4F5C;&#xFF0C;&#x5E76;&#x4E14;&#x63A5;&#x53E3;&#x53D8;&#x91CF;&#x662F;unaddressable&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x60F3;&#x4FEE;&#x6539;&#x5BF9;&#x8C61;&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x6307;&#x9488;&#x3002;</p>
+<pre><code class="lang-go">{
+    <span class="hljs-keyword">var</span> i = <span class="hljs-number">100</span> 
+    vi, vp, vpe := reflect.ValueOf(i), reflect.ValueOf(&amp;i),reflect.ValueOf(&amp;i).Elem()
+    fmt.Println(vi.CanAddr(),vi.CanSet())
+    fmt.Println(vp.CanAddr(),vp.CanSet())
+    fmt.Println(vpe.CanAddr(),vpe.CanSet())
+}
+&#x8F93;&#x51FA;&#xFF1A;
+<span class="hljs-literal">false</span> <span class="hljs-literal">false</span>
+<span class="hljs-literal">false</span> <span class="hljs-literal">false</span>
+<span class="hljs-literal">true</span> <span class="hljs-literal">true</span>
+</code></pre>
+<p>&#x8BF4;&#x660E;&#x53EA;&#x6709;&#x901A;&#x8FC7;Elem&#x51FD;&#x6570;&#x83B7;&#x53D6;&#x76EE;&#x6807;&#x5BF9;&#x8C61;&#x624D;&#x80FD;&#x591F;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x53D6;&#x5740;&#x548C;&#x8BBE;&#x7F6E;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x5BF9;&#x65E0;&#x8BBA;&#x662F;&#x5F53;&#x524D;&#x5305;&#x8FD8;&#x662F;&#x5176;&#x5B83;&#x5305;&#x4E2D;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x975E;&#x5BFC;&#x51FA;&#x5B57;&#x6BB5;&#x662F;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x64CD;&#x4F5C;&#x7684;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> person <span class="hljs-keyword">struct</span>{
+    Username <span class="hljs-keyword">string</span>
+    password <span class="hljs-keyword">string</span>
+}
+<span class="hljs-keyword">func</span> main(){
+    <span class="hljs-keyword">var</span> h person
+    v := reflect.ValueOf(&amp;h).Elem()
+    name := v.FieldByName(<span class="hljs-string">&quot;Username&quot;</span>)
+    pass := v.FieldByName(<span class="hljs-string">&quot;password&quot;</span>)
+    code := v.FieldByName(<span class="hljs-string">&quot;code&quot;</span>)           <span class="hljs-comment">//&#xFF1F;&#x4EC0;&#x4E48;&#x9B3C; IsValid()</span>
+    fmt.Println(name.CanAddr(), name.CanSet())
+    fmt.Println(pass.CanAddr(), pass.CanSet())
+}
+&#x8F93;&#x51FA;&#xFF1A;
+<span class="hljs-literal">true</span> <span class="hljs-literal">true</span>
+<span class="hljs-literal">true</span> <span class="hljs-literal">false</span>
+</code></pre>
+<p>&#x4ECE;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#x770B;&#x5230;&#xFF0C;&#x4E0D;&#x80FD;&#x5BF9;&#x975E;&#x5BFC;&#x51FA;&#x7684;&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x53D6;&#x5740;&#xFF0C;&#x90A3;&#x4E48;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5176;&#x5B83;&#x6E20;&#x9053;&#x5BF9;&#x5176;&#x8BBE;&#x7F6E;&#x5462;&#xFF1F;</p>
+<pre><code class="lang-go">{
+    <span class="hljs-keyword">var</span> h person
+    v := reflect.ValueOf(&amp;h).Elem()
+    name := v.FieldByName(<span class="hljs-string">&quot;Username&quot;</span>)
+    pass := v.FieldByName(<span class="hljs-string">&quot;password&quot;</span>)
+    fmt.Println(name.CanAddr(), name.CanSet())
+    fmt.Println(pass.CanAddr(), pass.CanSet())
+    <span class="hljs-keyword">if</span> name.CanSet(){
+        name.SetString(<span class="hljs-string">&quot;Kite&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> pass.CanAddr(){
+        *(*<span class="hljs-keyword">string</span>)(unsafe.Pointer(pass.UnsafeAddr())) = <span class="hljs-string">&quot;123123&quot;</span>                             
+    }
+    fmt.Println(h)
+}
+&#x8F93;&#x51FA;&#xFF1A;
+<span class="hljs-literal">true</span> <span class="hljs-literal">true</span>
+<span class="hljs-literal">true</span> <span class="hljs-literal">false</span>
+{Kite <span class="hljs-number">123123</span>}
+</code></pre>
+<p>UnsafeAddr&#x8FD4;&#x56DE;&#x8BE5;&#x5B57;&#x6BB5;&#x81EA;&#x8EAB;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x800C;Pointer&#x8FD4;&#x56DE;&#x8BE5;&#x5B57;&#x6BB5;&#x6240;&#x4FDD;&#x5B58;&#x7684;&#x5730;&#x5740;&#x3002;</p>
+<p>&#x65E5;&#x5E38;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x7ECF;&#x5E38;&#x4F1A;&#x9047;&#x5230;&#x5229;&#x7528;interface&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x7C7B;&#x578B;&#x63A8;&#x65AD;&#x548C;&#x8F6C;&#x6362;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code>type person struct{
+    Username string
+    Password string
+}
+
+func main(){
+    h:= person{&quot;tom&quot;,&quot;123123&quot;}
+    fmt.Println(h)
+    v := reflect.ValueOf(&amp;h)
+    p,ok := v.Interface().(*person)
+    if !ok {
+        fmt.Println(&quot;v.Interface fail.&quot;)
+        return
+    }
+    p.Password = &quot;123456&quot;
+    fmt.Println(h)
+}
+</code></pre><p>&#x5982;&#x679C;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;&#x662F;chanenl&#x7C7B;&#x578B;&#x7684;&#x8BDD;&#x5982;&#x4F55;&#x8BBE;&#x7F6E;&#x5462;&#xFF1F;</p>
+<pre><code class="lang-go">{
+    c := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">string</span>, <span class="hljs-number">5</span>)
+    v := reflect.ValueOf(c)
+    <span class="hljs-keyword">if</span> v.TrySend(reflect.ValueOf(<span class="hljs-string">&quot;hello gopher&quot;</span>)){                                           
+        fmt.Println(v.TryRecv())
+    }
+}
+&#x8F93;&#x51FA;&#xFF1A;
+hello gopher <span class="hljs-literal">true</span>
+</code></pre>
+<p>&#x6CE8;&#x610F;trySend&#x548C;TryRecv&#x90FD;&#x662F;&#x975E;&#x963B;&#x585E;&#x64CD;&#x4F5C;&#x51FD;&#x6570;</p>
+<p>&#x5BF9;&#x4E8E;interface&#x6709;&#x4E24;&#x4E2A;nil&#x72B6;&#x6001;&#xFF0C;&#x8FD9;&#x7ED9;&#x5F00;&#x53D1;&#x5E26;&#x6765;&#x4E86;&#x9EBB;&#x70E6;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;IsNil&#x6765;&#x5224;&#x65AD;&#x503C;&#x662F;&#x5426;&#x4E3A;nil&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-go">{
+    <span class="hljs-keyword">var</span> a <span class="hljs-keyword">interface</span>{} = <span class="hljs-literal">nil</span>
+    <span class="hljs-keyword">var</span> b <span class="hljs-keyword">interface</span>{} = (*<span class="hljs-keyword">int</span>)(<span class="hljs-literal">nil</span>)
+    fmt.Println(a == <span class="hljs-literal">nil</span>)                                                                    
+    fmt.Println(b == <span class="hljs-literal">nil</span>, reflect.ValueOf(b).IsNil())
+}
+&#x8F93;&#x51FA;&#xFF1A;
+<span class="hljs-literal">true</span>
+<span class="hljs-literal">false</span> <span class="hljs-literal">true</span>
+</code></pre>
+<h4 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</h4>
+<p>&#x5229;&#x7528;&#x53CD;&#x5C04;&#x8FDB;&#x884C;&#x52A8;&#x6001;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x6309;in&#x53C2;&#x6570;&#x5217;&#x8868;&#x51C6;&#x5907;&#x597D;&#x53C2;&#x6570;&#x5373;&#x53EF;&#xFF0C;&#x5BF9;&#x4E8E;&#x53D8;&#x53C2;&#x6765;&#x8BF4;&#xFF0C;&#x5C31;&#x662F;&#x7528;CallSlice&#x51FD;&#x6570;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (v Value) Call(in []Value) []Value
+<span class="hljs-keyword">func</span> (v Value) CallSlice(in []Value) []Value
+
+<span class="hljs-keyword">type</span> X <span class="hljs-keyword">int</span>
+<span class="hljs-keyword">func</span> (X) Sum(x,y <span class="hljs-keyword">int</span>)<span class="hljs-keyword">int</span> {
+    <span class="hljs-keyword">return</span> x+y 
+}
+
+<span class="hljs-keyword">func</span> (X) SumSlice(y ...<span class="hljs-keyword">interface</span>{})<span class="hljs-keyword">int</span> {
+    sum := <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> i:= <span class="hljs-number">0</span>;i &lt; <span class="hljs-built_in">len</span>(y);i++{
+        sum += y[i].(<span class="hljs-keyword">int</span>)
+    }
+    <span class="hljs-keyword">return</span> sum
+}
+
+<span class="hljs-keyword">func</span> main(){
+    <span class="hljs-keyword">var</span> i X
+    v := reflect.ValueOf(&amp;i)
+    m := v.MethodByName(<span class="hljs-string">&quot;Sum&quot;</span>)
+
+    args := []reflect.Value{
+        reflect.ValueOf(<span class="hljs-number">1</span>),
+        reflect.ValueOf(<span class="hljs-number">2</span>),
+    }
+    out := m.Call(args)                                                                      
+    <span class="hljs-keyword">for</span> _ , v := <span class="hljs-keyword">range</span> out{
+        fmt.Println(v)
+    }
+
+    m = v.MethodByName(<span class="hljs-string">&quot;SumSlice&quot;</span>)
+    args = []reflect.Value{
+        reflect.ValueOf([]<span class="hljs-keyword">interface</span>{}{<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>}),
+    }
+    out = m.CallSlice(args)
+    <span class="hljs-keyword">for</span> _ , v := <span class="hljs-keyword">range</span> out{
+        fmt.Println(v)
+    }
+}
+</code></pre>
+<p>&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (X) SumSlice(y ...<span class="hljs-keyword">interface</span>{})<span class="hljs-keyword">int</span> {
+    sum := <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> i:= <span class="hljs-number">0</span>;i &lt; <span class="hljs-built_in">len</span>(y);i++{
+        sum += y[i].(<span class="hljs-keyword">int</span>)
+    }
+    <span class="hljs-keyword">return</span> sum
+}
+</code></pre>
+<pre><code>&#x6CE8;&#x610F;&#x65E0;&#x6CD5;&#x5229;&#x7528;&#x53CD;&#x5C04;&#x8C03;&#x7528;&#x672A;&#x5BFC;&#x51FA;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x751A;&#x81F3;&#x65E0;&#x6CD5;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x53D6;&#x5740;
+</code></pre><h4 id="&#x6027;&#x80FD;">&#x6027;&#x80FD;</h4>
+<p>Go&#x8BED;&#x8A00;&#x53CD;&#x5C04;&#x5E26;&#x6765;&#x65B9;&#x4FBF;&#x7684;&#x4ED6;&#x540C;&#x65F6;&#xFF0C;&#x4E5F;&#x9020;&#x6210;&#x4E86;&#x5F88;&#x5927;&#x6027;&#x80FD;&#x4E0A;&#x7684;&#x635F;&#x5931;&#xFF0C;&#x635F;&#x5931;&#x5230;&#x5F88;&#x591A;&#x4EBA;&#x5BF9;&#x5176;&#x907F;&#x4E4B;&#x4E0D;&#x53CA;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<p>&#x8D4B;&#x503C;&#x6D4B;&#x8BD5;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Person <span class="hljs-keyword">struct</span>{
+    Age <span class="hljs-keyword">int</span> 
+}
+<span class="hljs-keyword">var</span> p Person
+<span class="hljs-keyword">func</span> set(a <span class="hljs-keyword">int</span>){
+    p.Age = a 
+}
+<span class="hljs-keyword">func</span> rset(a <span class="hljs-keyword">int</span>){
+    v := reflect.ValueOf(&amp;p).Elem()
+    f := v.FieldByName(<span class="hljs-string">&quot;Age&quot;</span>)
+    f.Set(reflect.ValueOf(a))
+}
+<span class="hljs-keyword">func</span> BenchmarkSet(b *testing.B){
+    <span class="hljs-keyword">for</span> i:=<span class="hljs-number">0</span>;i &lt;b.N;i++{
+        set(<span class="hljs-number">1</span>)
+    }   
+}
+<span class="hljs-keyword">func</span> BenchmarkRset(b *testing.B){
+    <span class="hljs-keyword">for</span> i:=<span class="hljs-number">0</span>;i &lt;b.N;i++{
+        rset(<span class="hljs-number">1</span>)                                                                              
+    }   
+}
+&#x8F93;&#x51FA;&#xFF1A;
+<span class="hljs-keyword">go</span> test -run None -bench . -benchmem file_test.<span class="hljs-keyword">go</span>
+BenchmarkSet<span class="hljs-number">-2</span>     <span class="hljs-number">2000000000</span>             <span class="hljs-number">0.45</span> ns/op           <span class="hljs-number">0</span> B/op           <span class="hljs-number">0</span> allocs/op
+BenchmarkRset<span class="hljs-number">-2</span>    <span class="hljs-number">10000000</span>           <span class="hljs-number">160</span> ns/op          <span class="hljs-number">16</span> B/op           <span class="hljs-number">2</span> allocs/op
+</code></pre>
+<p>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x6D4B;&#x8BD5;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (p *Person)Add(){
+    p.Age++
+}
+<span class="hljs-keyword">func</span> do(){
+    p.Add()
+}
+
+<span class="hljs-keyword">var</span> v = reflect.ValueOf(&amp;p)
+<span class="hljs-keyword">var</span> m = v.MethodByName(<span class="hljs-string">&quot;Add&quot;</span>)
+<span class="hljs-keyword">func</span> rdo(){
+    m.Call(<span class="hljs-literal">nil</span>)
+}
+
+<span class="hljs-keyword">func</span> BenchmarkDo(b *testing.B){
+    <span class="hljs-keyword">for</span> i:=<span class="hljs-number">0</span>;i &lt;b.N;i++{
+        do()
+    }
+}
+
+<span class="hljs-keyword">func</span> BenchmarkRdo(b *testing.B){
+    <span class="hljs-keyword">for</span> i:=<span class="hljs-number">0</span>;i &lt;b.N;i++{
+        rdo()
+    }   
+}
+&#x8F93;&#x51FA;&#xFF1A;
+# <span class="hljs-keyword">go</span> test -run None -bench . -benchmem file_test.<span class="hljs-keyword">go</span>
+BenchmarkDo<span class="hljs-number">-2</span>     <span class="hljs-number">1000000000</span>             <span class="hljs-number">2.08</span> ns/op           <span class="hljs-number">0</span> B/op           <span class="hljs-number">0</span> allocs/op
+BenchmarkRdo<span class="hljs-number">-2</span>    <span class="hljs-number">10000000</span>           <span class="hljs-number">170</span> ns/op           <span class="hljs-number">0</span> B/op           <span class="hljs-number">0</span> allocs/op
+</code></pre>
+<p>&#x5B9E;&#x9A8C;&#x8BC1;&#x660E;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x5BF9;&#x7A0B;&#x5E8F;&#x7684;&#x6027;&#x80FD;&#x8FD8;&#x662F;&#x6709;&#x4E00;&#x5B9A;&#x5F71;&#x54CD;&#x7684;&#xFF0C;&#x8C28;&#x614E;&#x4F7F;&#x7528;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="package.html" class="navigation navigation-prev " aria-label="Previous page: 包管理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="utest.html" class="navigation navigation-next " aria-label="Next page: 测试">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"反射","level":"1.2.10","depth":2,"next":{"title":"测试","level":"1.2.11","depth":2,"path":"basic/utest.md","ref":"basic/utest.md","articles":[]},"previous":{"title":"包管理","level":"1.2.9","depth":2,"path":"basic/package.md","ref":"basic/package.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"basic/reflect.md","mtime":"2016-11-29T02:07:42.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-02T01:31:07.588Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
