@@ -13,6 +13,26 @@ func main() {
 }
 ```
 
+#### [...] 在go语言中表达什么用途
+- 由编译器计算该值得元素数量，并以此获取到长度,比如
+```go
+	var a = [...]int{1, 2, 3, 4}
+```
+- 为函数定义多个参数，比如args是个数组:
+```go
+func test(args ...int) {
+	for _, a := range args {
+		println(a)
+	}
+}
+```
+- 将slice的值打散，用以调用上面的函数
+```go
+	var a = make([]int, 0)
+	a = append(a, 1, 2, 3)
+	test(a...)
+```
+
 #### while
 如下代码是否有问题？ 如何修正?
 ```go
@@ -342,3 +362,5 @@ func main() {
 	time.Sleep(3 * time.Second)
 }
 ```
+
+#### -race检查Go语言程序中是否存在数据竞争问题
