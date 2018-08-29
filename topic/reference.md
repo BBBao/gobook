@@ -1,0 +1,9 @@
+http://colobu.com/2016/03/10/Summary-of-Architectures/
+http://onestraw.github.io
+http://colobu.com/2017/11/22/new-pprof-UI/
+https://github.com/google/pprof
+http://cizixs.com/2017/09/11/profiling-golang-program
+http://lihaoquan.me/2017/1/1/Profiling-and-Optimizing-Go-using-go-torch.html
+https://juejin.im/entry/57d90a5d816dfa0067d5abc5
+https://github.com/campoy/go-tooling-workshop/blob/master/3-dynamic-analysis/3-profiling/2-pprof.
+https://artem.krylysov.com/blog/2017/03/13/profiling-and-optimizing-go-web-applications/

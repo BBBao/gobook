@@ -23,6 +23,20 @@ client := &http.Client{
 }
 resp, err := client.Get("http://example.com")
 // ...
+func main() {
+	tr := &http.Transport{
+		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+	}
+	client := &http.Client{Transport: tr}
+	r, err := client.Get("https://localhost/hello")
+	if err != nil {
+		fmt.Println(err)
+	}
+	defer r.Body.Close()
+	data, _ := ioutil.ReadAll(r.Body)
+
+	fmt.Println(string(data))
+}
 ```
 
 - 方式三：
@@ -49,12 +63,33 @@ body, err := ioutil.ReadAll(resp.Body)
 // ...
 ```
 
-练习域名有效性：
-
 #### http服务端创建
 通过 http.ListenAndServe 创建一个简单的http服务器:
 ```go
+import "net/http"
 
+func main() {
+	//http.Handle("/", http.HandlerFunc(index))
+    //http.HandleFunc("/text", text)
+	http.Handle("/", http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
+		w.Write([]byte("Hello"))
+	}))
+	http.ListenAndServe(":8001", nil)
+}
+
+import (
+    "fmt"
+    "net/http"
+)
+
+func handler(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
+}
+
+func main() {
+    http.HandleFunc("/", handler)
+    http.ListenAndServe(":8080", nil)
+}
 ```
 
 如果想设置一些控制信息，实现复杂一点的服务器，可以应用如下方式：
@@ -68,6 +103,29 @@ s := &http.Server{
 }
 s.ListenAndServe()
 ```
+如何自定义实现 myHandler
+```go
+	mux := http.NewServeMux()
+	mux.HandleFunc("/", http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
+		w.Write([]byte("Hello"))
+	}))
+
+	s := &http.Server{
+		Addr:           ":8001",
+		Handler:        mux,
+		ReadTimeout:    10 * time.Second,
+		WriteTimeout:   10 * time.Second,
+		MaxHeaderBytes: 1 << 10,
+	}
+	s.ListenAndServe()
+
+	mux := http.NewServeMux()
+    mux.Handle("/", http.HandlerFunc(index))
+    mux.HandleFunc("/text", text)
+    http.ListenAndServe(":8000", mux)
+```
+
+
 
 #### 快速实现一个文件服务器
 ```go
@@ -77,6 +135,13 @@ func newFileServer() {
 }
 ```
 
+DefaultServeMux缺陷
+不支持正则路由
+只支持路径匹配，不支持按照 Method，header，host等信息匹配，所以也就没法实现RESTful架构
+gorilla/mux
+
 作业：
+预习gorilla/mux
 验证证书有效性
-主机监控插件
+主机存活监控
+http://localhost:6060/doc/articles/wiki/

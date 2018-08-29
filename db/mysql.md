@@ -1,5 +1,10 @@
 # mysql
 
+```
+flush privileges;
+GRANT all privileges on kugo.* TO 'test'@'localhost' IDENTIFIED BY 'test';
+```
+
 ```text
 Mysql数据库的CRUD操作
 ```

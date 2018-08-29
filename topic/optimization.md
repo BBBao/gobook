@@ -1,0 +1,2 @@
+go trace
+go pperf

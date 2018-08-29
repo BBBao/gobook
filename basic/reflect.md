@@ -4,10 +4,11 @@
 2. 值
 3. 方法
 4. 性能
+5. 应用场景
 ```
 
 ### 类型
-Go语言反射(reflect)是在程序时实现能够获取对象类型信息和内存结构的方法。
+Go语言反射(reflect)是指在程序运行时，实现能够获取对象类型信息和内存结构的方法。
 和C语言数据结构一样，Go对象头部也没有类型指针，通过其自身是无法在运行期
 获取任何相关类型信息的，反射操作通过接口变量获取其自身类型外，还会保存实际
 对象的类型数据。
@@ -16,7 +17,7 @@ Go语言反射(reflect)是在程序时实现能够获取对象类型信息和内
 func TypeOf(i interface{}) Type
 func ValueOf(i interface{}) Value
 ```
-上面两个反射入口函数，会将任何传入的对象转换为接口类型。
+上面两个反射入口函数，会将传入的任意对象都转换为接口类型。
 
 ```go
 type X32 int32
@@ -209,6 +210,51 @@ func main(){
     }
 }
 ```
+常见应用tag的场景是json，和db或者field，那么思考如下代码，s中是否有值，为什么？
+```go
+type S struct {
+	DiskReadIOPS string `json:"disk-ReadIOPS"`
+}
+type D struct {
+	DiskReadIOPS string `db:"disk-ReadIOPS"`
+}
+{
+	var d = D{
+		DiskReadIOPS: "30",
+	}
+    var s = S{}
+	js1, _ := json.Marshal(&d)
+    json.Unmarshal(js1, &s)
+	fmt.Println(s)	
+}
+```
+总结：
+Unmarshal 是怎么找到结构体中对应的值呢？比如给定一个 JSON key Filed
+```
+    首先查找json tag 名字为 Field 的字段
+    然后查找名字为 Field 的字段
+    最后再找名字为 FiElD 等大小写不敏感的匹配字段
+    如果都没有找到，就直接忽略这个 key，也不会报错
+```
+再比如：
+```go
+type peerInfo struct {  
+    HTTPPort int  
+    TCPPort  int  
+    versiong string  
+}  
+  
+func main() {  
+    var v peerInfo  
+    data := []byte(`{"http_port":80,"tcp_port":3306}`)  
+    err := json.Unmarshal(data, &v)  
+    if err != nil {  
+        fmt.Println(err)  
+    }  
+    fmt.Printf("%+v\n", v)  
+}
+```
+
 #### 值
 重温一下Go反射的两个反射入口函数：
 
@@ -225,6 +271,11 @@ func ValueOf(i interface{}) Value   //Value获取对象实例数据信息
     fmt.Println(vi.CanAddr(),vi.CanSet())
     fmt.Println(vp.CanAddr(),vp.CanSet())
     fmt.Println(vpe.CanAddr(),vpe.CanSet())
+    //如何修改
+    v := int64(7)
+	rv := reflect.ValueOf(v)
+	vpe.Set(rv)
+	fmt.Println(i)
 }
 输出：
 false false
